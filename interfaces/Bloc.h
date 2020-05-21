@@ -2,7 +2,8 @@
 #ifndef _BLOC_H
 
 #include <vector>
-
+#include <iostream>
+#include <string>
 //
 // bloc.h  version 1.1
 //
@@ -32,13 +33,13 @@ class UTXO // une sortie non dépensée
   unsigned char dest[KEY_SIZE];  //	compte destinataire (clé publique)
   unsigned char hash[HASH_SIZE];    // hash(nBloc,nTx,nUTXO,montant,destinataire) pour securisation de l'UTXO
 
-  std::string ToString();    // serialisation (necessaire au hash)
+  std::string toString();    // serialisation (necessaire au hash)
 };
 
 class TX { // transaction standard (many inputs, many outputs)
  public:
-  std::vector<txi>	TXIs;
-  std::vector<utxo>	UTXOs;
+  std::vector<TXI>	TXIs;
+  std::vector<UTXO>	UTXOs;
 };
 
 class TXM { // transaction du mineur : coinbase
@@ -64,6 +65,7 @@ class Bloc
 	void setHash(char[]);
 	std::string toString(); // a implementer par le groupe "Fichier"
     std::string toStringSansHash(); // a implementer par le groupe "Fichier"
+    char* getHash(); 
 };
 
 #endif

@@ -9,8 +9,9 @@
 
 int main(int argc, char ** argv)
 {
-    Bloc bloc();
-    Composant3::composant3(bloc);
-    cout << bloc.getNonce() << '\n';
-    cout << bloc.getHash();
+    Bloc bloc;
+
+    composant3(bloc);
+    std::cout << bloc.getNonce() << '\n';
+    std::cout << bloc.getHash();
 }

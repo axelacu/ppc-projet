@@ -9,6 +9,11 @@ std::string Bloc::toString(){
 void Bloc::setNonce(int n){
 	nonce=n;
 }
+
+char* Bloc::getHash(){
+	return hash;
+}
+
 unsigned int Bloc::getNonce(){
 	return nonce;
 }
@@ -17,6 +22,6 @@ void Bloc::setHash(char[] h){
 }
 
 Bloc::Bloc(){
-	hash = std::string(64,"1");
+	hash = std::string(64,'1');
 	nonce = 0;
 }

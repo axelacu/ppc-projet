@@ -3,7 +3,7 @@
 #define COMPOSANT4_H
 
 #include <string>
-#include "../interfaces/bloc.h"
+#include "Bloc.h"
 
 std::string hashBloc(Bloc bloc);
 bool verifHash(Bloc bloc, std::string hashCode);

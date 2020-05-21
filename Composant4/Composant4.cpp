@@ -4,7 +4,9 @@
 #include <dlfcn.h>
 
 std::string hashBloc(Bloc bloc){
-	return(std::hash(bloc.toString()))
+	
+	std::string hash = std::string(64,'0');
+	return hash;
 }
 
 bool verifHash(Bloc bloc, std::string hashCode){
@@ -12,5 +14,10 @@ bool verifHash(Bloc bloc, std::string hashCode){
 }
 
 std::string version(){
-	return 1;
+	return "1.0";
+}
+
+int main(){
+	std::cout<<"Hello"<<std::endl;
+	return 0;
 }
