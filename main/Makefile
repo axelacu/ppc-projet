@@ -2,7 +2,7 @@
 
 CPPFLAGS=-I../interfaces
 BIN_DIR=../bin
-COMPONENTS_NEEDED= Composant1 Composant2 3 4
+COMPONENTS_NEEDED= Composant1 Composant2 Composant3 Composant4 Bloc
 COMPONENTS_DIR=../lib
 COMPONENTS_FILES=${COMPONENTS_NEEDED:%=${COMPONENTS_DIR}/lib%.so}
 LD_COMPONENTS=${COMPONENTS_NEEDED:%=-l%}
