@@ -1,7 +1,14 @@
-#ifndef COMPOSANT2_H
-#define COMPOSANT2_H
+#pragma once
+#ifndef COMPOSANT4_H
+#define COMPOSANT4_H
 
-// interface du composant2
+#include <string>
+#include "../interfaces/bloc.h"
 
-extern "C" int composant2(int p1, int p2);
+std::string hashBloc(Bloc bloc);
+bool verifHash(Bloc bloc, std::string hashCode);
+Bloc buildBloc(TX transaction);
+Bloc buildBlocFull(char prevHash[], TX transaction, TXM trasnsactionMineur, unsigned int nonce, int num);
+std::string version();
+
 #endif
