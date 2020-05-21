@@ -72,23 +72,18 @@ void boucle(Bloc &bloc){
 	bloc.setNonce(0);
 	//TODO : Verifier quel est le groupe 
 	//TODO : tester l'appel des fonction exporté par la lib,
-	std::cout<<"setNonce"<<std::endl;
-	int difficulty = 3;//getDifficulty("./libComposant2.so","difficulty");//
-	std::cout<<"difficulty"<<std::endl;
+	int difficulty = getDifficulty("./libComposant2.so","difficulty");//
 	std::string hash = hashFunction(bloc,"./libComposant4.so");  //call hash function de la librairie partagé. OPEN DL
-	std::cout<<"hashFunc"<<std::endl;
+
 	while(!valid(hash, difficulty))
 	{
-		std::cout<<"valid"<<std::endl;
 		bloc.setNonce(bloc.getNonce()+1);
-		std::cout<<"setNonce2"<<std::endl;
 		///call hash function
 		hash = hashFunction(bloc,"./libComposant4.so");
-		std::cout<<"hasFunc2"<<std::endl;
 	}
 
 	//set hash of the bloc
-	
+
 	char* hashArray;
 	strcpy(hashArray,hash.c_str());
 
