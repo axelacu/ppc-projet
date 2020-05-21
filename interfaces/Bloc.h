@@ -68,4 +68,8 @@ class Bloc
     char* getHash(); 
 };
 
+
+extern "C" Bloc* getBlocDynLibPointer();
+
+
 #endif

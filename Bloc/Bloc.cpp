@@ -31,3 +31,8 @@ Bloc::Bloc(){
 
 	nonce = 0;
 }
+
+Bloc* getBlocDynLibPointer(){
+	Bloc* bloc = new Bloc;
+	return bloc;
+}
