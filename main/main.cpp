@@ -14,7 +14,7 @@ int main(int argc, char ** argv)
     //Bloc bloc;
     Bloc bloc;
 
-    composant3(bloc);zz
+    composant3(bloc);
     std::cout << bloc.getNonce() << '\n';
     std::cout << bloc.getHash();
 
