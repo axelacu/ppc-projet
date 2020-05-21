@@ -70,16 +70,27 @@ static std::string hashFunction(Bloc bloc,const char* nom_composante){
 void boucle(Bloc &bloc){
 
 	bloc.setNonce(0);
+
+    std::cout<<"setNonce"<<std::endl;
 	//TODO : Verifier quel est le groupe 
 	//TODO : tester l'appel des fonction exporté par la lib,
 	int difficulty = getDifficulty("Composant2","difficulty");//
+
+    std::cout<<"getDiff"<<std::endl;
 	std::string hash = hashFunction(bloc,"Composant4");  //call hash function de la librairie partagé. OPEN DL
 
+    std::cout<<"hashFunction"<<std::endl;
 	while(!valid(hash, difficulty))
 	{
+
+    std::cout<<"valid"<<std::endl;
 		bloc.setNonce(bloc.getNonce()+1);
 		///call hash function
+
+    std::cout<<"setNonce2"<<std::endl;
 		hash = hashFunction(bloc,"Composant4");
+
+    std::cout<<"hasfunction2"<<std::endl;
 	}
 
 	//set hash of the bloc
