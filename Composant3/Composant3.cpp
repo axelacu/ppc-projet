@@ -74,7 +74,7 @@ void boucle(Bloc &bloc){
     std::cout<<"setNonce"<<std::endl;
 	//TODO : Verifier quel est le groupe 
 	//TODO : tester l'appel des fonction exporté par la lib,
-	int difficulty = 3//getDifficulty("Composant2","difficulty");//
+	int difficulty = 3;//getDifficulty("Composant2","difficulty");//
 
     std::cout<<"getDiff"<<std::endl;
 	std::string hash = hashFunction(bloc,"Composant4");  //call hash function de la librairie partagé. OPEN DL
