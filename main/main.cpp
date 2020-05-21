@@ -3,9 +3,9 @@
 #include <dlfcn.h>
 #include <stdio.h>
 #include <string>
-#include "Bloc.h"
-#include "Composant4.h"
-#include "Composant3.h"
+#include "../Bloc/Bloc.cpp"
+#include "../Composant4/Composant4.cpp"
+#include "../Composant3/Composant3.cpp"
 
 int main(int argc, char ** argv)
 {	
@@ -14,8 +14,7 @@ int main(int argc, char ** argv)
     //Bloc bloc;
     Bloc bloc;
 
-    composant3(bloc);
-    std::cout<<"Composant3"<<std::endl;
+    composant3(bloc);zz
     std::cout << bloc.getNonce() << '\n';
     std::cout << bloc.getHash();
 
