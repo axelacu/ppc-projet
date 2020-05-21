@@ -70,31 +70,25 @@ static std::string hashFunction(Bloc bloc,const char* nom_composante){
 void boucle(Bloc &bloc){
 
 	bloc.setNonce(0);
-
-    std::cout<<"setNonce"<<std::endl;
 	//TODO : Verifier quel est le groupe 
 	//TODO : tester l'appel des fonction exporté par la lib,
-	int difficulty = 3;//getDifficulty("Composant2","difficulty");//
-
-    std::cout<<"getDiff"<<std::endl;
-	std::string hash = hashFunction(bloc,"Composant4");  //call hash function de la librairie partagé. OPEN DL
-
-    std::cout<<"hashFunction"<<std::endl;
+	std::cout<<"setNonce"<<std::endl;
+	int difficulty = 3;//getDifficulty("./libComposant2.so","difficulty");//
+	std::cout<<"difficulty"<<std::endl;
+	std::string hash = hashFunction(bloc,"./libComposant4.so");  //call hash function de la librairie partagé. OPEN DL
+	std::cout<<"hashFunc"<<std::endl;
 	while(!valid(hash, difficulty))
 	{
-
-    std::cout<<"valid"<<std::endl;
+		std::cout<<"valid"<<std::endl;
 		bloc.setNonce(bloc.getNonce()+1);
+		std::cout<<"setNonce2"<<std::endl;
 		///call hash function
-
-    std::cout<<"setNonce2"<<std::endl;
-		hash = hashFunction(bloc,"Composant4");
-
-    std::cout<<"hasfunction2"<<std::endl;
+		hash = hashFunction(bloc,"./libComposant4.so");
+		std::cout<<"hasFunc2"<<std::endl;
 	}
 
 	//set hash of the bloc
-
+	
 	char* hashArray;
 	strcpy(hashArray,hash.c_str());
 
@@ -103,9 +97,7 @@ void boucle(Bloc &bloc){
 
 
 void composant3(Bloc &bloc)
-{	
-    std::cout<<"test"<<std::endl;
-	boucle(bloc);	
-    std::cout<<"aaaa"<<std::endl;
+{
+	boucle(bloc);
 }
 
