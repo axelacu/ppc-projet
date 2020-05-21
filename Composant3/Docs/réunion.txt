@@ -1,0 +1,8 @@
+Il faut discuter de l'interface
+	Comment recevoir le bloc
+	Comment le retourner (en dehors du hash)
+	Créer une fonction englobant tout notre fonctionnement servant d'interface
+	Probablement passer par un passage par référence du bloc pour modifier le nonce
+
+Il faudra aussi prévoir la phase de tests
+
