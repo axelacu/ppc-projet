@@ -16,8 +16,3 @@ bool verifHash(Bloc bloc, std::string hashCode){
 std::string version(){
 	return "1.0";
 }
-
-int main(){
-	std::cout<<"Hello"<<std::endl;
-	return 0;
-}
