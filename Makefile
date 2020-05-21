@@ -3,7 +3,7 @@ all: tested
 
 tested: install
 	cd bin; \
-	LD_LIBRARY_PATH=./lib; \
+	LD_LIBRARY_PATH=.; \
 	./main;
 
 install:
