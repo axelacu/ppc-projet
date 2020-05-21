@@ -72,14 +72,14 @@ void boucle(Bloc &bloc){
 	bloc.setNonce(0);
 	//TODO : Verifier quel est le groupe 
 	//TODO : tester l'appel des fonction exporté par la lib,
-	int difficulty = getDifficulty("Composant2","difficulty");//
-	std::string hash = hashFunction(bloc,"Composant4");  //call hash function de la librairie partagé. OPEN DL
+	int difficulty = getDifficulty("./libComposant2.so","difficulty");//
+	std::string hash = hashFunction(bloc,"./libComposant4.so");  //call hash function de la librairie partagé. OPEN DL
 
 	while(!valid(hash, difficulty))
 	{
 		bloc.setNonce(bloc.getNonce()+1);
 		///call hash function
-		hash = hashFunction(bloc,"Composant4");
+		hash = hashFunction(bloc,"./libComposant4.so");
 	}
 
 	//set hash of the bloc
