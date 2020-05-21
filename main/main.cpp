@@ -3,9 +3,9 @@
 #include <dlfcn.h>
 #include <stdio.h>
 #include <string>
-#include "Bloc.cpp"
-#include "Composant4.cpp"
-#include "Composant3.cpp"
+#include "../Bloc/Bloc.cpp"
+#include "../Composant4/Composant4.cpp"
+#include "../Composant4/Composant3.cpp"
 
 int main(int argc, char ** argv)
 {	
