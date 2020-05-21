@@ -5,7 +5,7 @@
 #include <string>
 #include "../Bloc/Bloc.cpp"
 #include "../Composant4/Composant4.cpp"
-#include "../Composant4/Composant3.cpp"
+#include "../Composant3/Composant3.cpp"
 
 int main(int argc, char ** argv)
 {	
