@@ -1,7 +1,7 @@
-#ifndef COMPOSANT2_H
-#define COMPOSANT2_H
+#ifndef COMPOSANT3_H
+#define COMPOSANT3_H
 
-// interface du composant2
+// interface du composant3
 
-extern "C" int composant2(int p1, int p2);
+extern "C" void composant3(Bloc &bloc);
 #endif
