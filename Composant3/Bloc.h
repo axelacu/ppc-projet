@@ -48,6 +48,8 @@ class TXM { // transaction du mineur : coinbase
 
 class Bloc
 {
+ public :
+	Bloc();
  public:
 	char hash[HASH_SIZE]; // hash des autres champs, hash of the entire bloc
 	unsigned int nonce;
@@ -57,6 +59,9 @@ class Bloc
 	TX tx1; //  transaction du bloc
 	TXM tx0; // transaction du mineur (coinbase)
 
+	void setNonce(int);
+	unsigned int getNonce();
+	void setHash(char[]);
 	std::string toString(); // a implementer par le groupe "Fichier"
     std::string toStringSansHash(); // a implementer par le groupe "Fichier"
 };
