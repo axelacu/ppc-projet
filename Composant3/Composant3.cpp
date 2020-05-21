@@ -92,7 +92,9 @@ void boucle(Bloc &bloc){
 
 
 void composant3(Bloc &bloc)
-{
-	boucle(bloc);
+{	
+    std::cout<<"test"<<std::endl;
+	boucle(bloc);	
+    std::cout<<"aaaa"<<std::endl;
 }
 
