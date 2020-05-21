@@ -62,7 +62,7 @@ class Bloc
 
 	void setNonce(int);
 	unsigned int getNonce();
-	void setHash(char[]);
+	void setHash(char h[64]);
 	std::string toString(); // a implementer par le groupe "Fichier"
     std::string toStringSansHash(); // a implementer par le groupe "Fichier"
     char* getHash(); 
