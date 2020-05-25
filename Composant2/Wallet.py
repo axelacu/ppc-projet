@@ -21,7 +21,7 @@ from unittest.mock import patch
 # COMPTE RENDU:
 #
 # Meeting composant 1 (Didi) => Ok pour qu'ils retournent la liste des blocs lorsqu'on fait appelà leur fonction
-# Meeting composant 4 (Mikael) => cf captures groupe, OK pour envoyer juste la transaction (list TXI déjà signés par le composant signature, list UTXO)
+# Meeting composant 4 (Mickael) => cf captures groupe, OK pour envoyer juste la transaction (list TXI déjà signés par le composant signature, list UTXO)
 # Meeting composant 6 (Lisa) => Ils avaient besoin d'une chaine en Input pour leur fonction de hashage => on a fait le taff cf fonction concatTransactionParameters
 
 ################end To Do list#############################
