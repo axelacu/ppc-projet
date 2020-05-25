@@ -1,10 +1,9 @@
-
 CPPFLAGS=-I../interfaces
 
-COMPOSANT = Composant2
+COMPOSANT = composant4
 
 LIBSO = lib${COMPOSANT}.so
-LIBSO_OBJS = ${COMPOSANT}.o
+LIBSO_OBJS = ${COMPOSANT}.o ../hash/hash.o ../bloc/bloc.o
 DESTINATION_DIR = ../lib
 DESTINATION_LIBSO = ${DESTINATION_DIR}/${LIBSO}
 
