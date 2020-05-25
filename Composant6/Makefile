@@ -12,7 +12,7 @@ LDFLAGS = -lboost_python -lboost_system -lpython3.6m
 include ../gcc.mk
 
 
-all: $(LIBSO)
+all: ${DESTINATION_LIBSO}
 clean:
 	rm -f ${LIBSO} ${DESTINATION_LIBSO} ${LIBSO_OBJS}
 
@@ -20,7 +20,7 @@ install: ${DESTINATION_DIR} ${DESTINATION_LIBSO}
 
 
 ${DESTINATION_LIBSO}: ${LIBSO}
-	cp $< $@
+	cp -f $< $@
 
 ${DESTINATION_DIR}:
 	mkdir -p $@
