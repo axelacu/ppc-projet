@@ -6,3 +6,5 @@ le Makefile a été modifié pour lancer les test suivants :
 		- ./main Composant2 3 4
 
 le main.cpp ouvre la bonne librairie suivant le premier argument et renvoie l'opération effectué par ce dernier avec les 2 chiffres passés en parametre
+
+25/05/2020 Data Enty Test
