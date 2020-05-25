@@ -9,10 +9,10 @@ DESTINATION_DIR = ../lib
 DESTINATION_LIBSO = ${DESTINATION_DIR}/${LIBSO}
 
 LDFLAGS=-ljson-c
+
 include ../gcc.mk
 
-
-all: $(LIBSO)
+all: $(DESTINATION_LIBSO)
 clean:
 	rm -f ${LIBSO} ${DESTINATION_LIBSO} ${LIBSO_OBJS}
 
