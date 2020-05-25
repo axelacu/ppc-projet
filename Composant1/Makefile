@@ -8,6 +8,7 @@ LIBSO_OBJS = ${COMPOSANT}.o
 DESTINATION_DIR = ../lib
 DESTINATION_LIBSO = ${DESTINATION_DIR}/${LIBSO}
 
+LDFLAGS=-ljson-c
 include ../gcc.mk
 
 
