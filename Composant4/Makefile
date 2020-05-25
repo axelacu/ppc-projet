@@ -1,25 +1,14 @@
+ifdef PARAM
+	COMPONENTS =${PARAM}
+else
+	COMPONENTS=composant4
+endif
+all: test
 
-CPPFLAGS=-I../interfaces
-
-COMPOSANT = Composant4
-
-LIBSO = lib${COMPOSANT}.so
-LIBSO_OBJS = ${COMPOSANT}.o
-DESTINATION_DIR = ../lib
-DESTINATION_LIBSO = ${DESTINATION_DIR}/${LIBSO}
-
-include ../gcc.mk
-
-
-all: $(LIBSO)
+test: install
+	cd bin; \
+	LD_LIBRARY_PATH=. ./main
 clean:
-	rm -f ${LIBSO} ${DESTINATION_LIBSO} ${LIBSO_OBJS}
-
-install: ${DESTINATION_DIR} ${DESTINATION_LIBSO}
-
-
-${DESTINATION_LIBSO}: ${LIBSO}
-	cp $< $@
-
-${DESTINATION_DIR}:
-	mkdir -p $@
+	cd main && ${MAKE} clean COMPONENT=${COMPONENTS}
+install:
+	${MAKE} clean && cd main && ${MAKE} install COMPONENT=${COMPONENTS}
