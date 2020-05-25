@@ -45,3 +45,12 @@ bool Verificateur_Bloc::VerificateurHash(Bloc bloc) {
     }
     return true;
 }
+
+//fonctions composant 4
+bool Verificateur_Bloc::verifHash(Bloc totest, char *hashtotest) {
+    return true;
+}
+//fonction composant 6
+bool Verificateur_Bloc::verify(std::string pubkey, char *hash, unsigned char *signature) {
+    return true;
+}
