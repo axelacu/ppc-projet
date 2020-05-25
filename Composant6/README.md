@@ -1,3 +1,10 @@
+<b>Générer la librairie signature.so</b> : utiliser <i>make</i> pour générer la librairie so. Et <i>make clean</i> pour nettoyer.
+
+
+
+
+
+
 Contenu de la librairie :
 La librairie signature contient trois fonctions principales pour gérer la signature de hash chose :
 
