@@ -30,7 +30,7 @@ void initBlockchain(){
 		fprintf (fp, "\t\"previous_hash\"\t:\t\"example-ijsd4jdonosdijfoijs\",\n");
 		fprintf (fp, "\t\"num\"\t:\t0,\n");
 		fprintf (fp, "\t\"TX\"\t:\t\"tx1 transaction du bloc\",\n");
-		fprintf (fp, "\t\"TXM\"\t:\t\"x0 transaction du mineur (coinbase)\n");
+		fprintf (fp, "\t\"TXM\"\t:\t\"x0 transaction du mineur (coinbase)\"\n");
 		fprintf (fp, "}\n");
 	}
 	fclose(fp);
@@ -85,7 +85,7 @@ void addBloc(){
 		fprintf (fp, "\t\"previous_hash\"\t:\t\"example-ijsd4jdonosdijfoijs\",\n");
 		fprintf (fp, "\t\"num\"\t:\t0,\n");
 		fprintf (fp, "\t\"TX\"\t:\t\"tx1 transaction du bloc\",\n");
-		fprintf (fp, "\t\"TXM\"\t:\t\"x0 transaction du mineur (coinbase)\n");
+		fprintf (fp, "\t\"TXM\"\t:\t\"x0 transaction du mineur (coinbase)\"\n");
 		fprintf (fp, "}\n");
 	}
 	fclose(fp);
