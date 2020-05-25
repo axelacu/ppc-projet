@@ -7,12 +7,9 @@ Bloc::Bloc()
 	num = nbBloc;
 }
 
-Bloc::Bloc(TX & transac)
+Bloc::Bloc(TX & transac) : Bloc()
 {
 	tx1 = transac;
-	nonce = 0;
-	nbBloc++;
-	num = nbBloc;
 }
 
 std::string UTXO::toString()
