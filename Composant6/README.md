@@ -2,7 +2,7 @@ Contenu de la librairie :
 La librairie signature contient trois fonctions principales pour gérer la signature de hash chose :
 
 • String GeneratePairKey() : ne prend aucun paramètre et renvoie une chaine de caractère.
- 	o Output : le couple (clé publique, clé privée) est renvoyé dans la même chaine de
+	o Output : le couple (clé publique, clé privée) est renvoyé dans la même chaine de
 caractère et séparés par un “-”. Il suffit alors de faire appel à la fonction split (voir la suite) pour
 récupérer chacune des clés dans une chaine de caractères séparée.
 	o String split(string paireDeClés, int arg ) : cette fonction prend en paramètre la chaine de caractère
