@@ -4,7 +4,12 @@ sudo apt install libjson-c-dev
 Exécution du code : 
 gcc test.c -ljson-c -o test
 
+Pour le make, lancez les commandes suivantes :
+make clean
+make
+make install #pour la copie dans le répértoire /lib
+
 Pour tester les fonctionnalités du code il faut décommenter les fonctions suivantes :
 	void initBlockchain();
-	void getAllBlocs();
+	void getAllBlocs(); // voir le TODO
 	void addBloc();
