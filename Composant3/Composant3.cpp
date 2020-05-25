@@ -96,7 +96,7 @@ void composant3(Bloc &bloc)
 	boucle(bloc);
 }
 
-/**
+
 //including boost module
 #include <boost/python.hpp>
 
@@ -107,5 +107,5 @@ BOOST_PYTHON_MODULE(composant3)
   def("composant3", composant3);
 };
 
-**/
+
 

@@ -1,7 +1,10 @@
 
-CPPFLAGS=-I../interfaces
+CPPFLAGS=-I ../interfaces
+CPPFLAGS+=-I /usr/include/python3.6m
 
 COMPOSANT = Composant3
+
+LIBS=-lpython3.6m -lboost_python3-py36
 
 LIBSO = lib${COMPOSANT}.so
 LIBSO_OBJS = ${COMPOSANT}.o
