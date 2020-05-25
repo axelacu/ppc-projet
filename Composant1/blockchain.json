@@ -1,0 +1,8 @@
+{
+	"hash"	:	"example-ijsd4jdonosdijfoijs",
+	"nonce"	:	"nonce",
+	"previous_hash"	:	"example-ijsd4jdonosdijfoijs",
+	"num"	:	0,
+	"TX"	:	"tx1 transaction du bloc",
+	"TXM"	:	"x0 transaction du mineur (coinbase)
+}
